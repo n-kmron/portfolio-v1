@@ -1,0 +1,33 @@
+* {
+          margin: 0;
+          box-sizing: border-box;
+}
+
+body {
+          background-color: white;
+}
+
+header {
+          background-color: grey;
+          padding: 10px;
+}
+
+header p {
+          max-width: 30%;
+}
+
+main {
+          padding: 20px;
+}
+.projects {
+          display: flex;
+}
+
+.links {
+          display: flex;
+}
+
+footer {
+          background-color: grey;
+          display: flex;
+}
