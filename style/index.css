@@ -1,33 +1,87 @@
+/* SETUP */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 * {
           margin: 0;
           box-sizing: border-box;
+          font-family: 'PT Sans', sans-serif;
 }
 
 body {
           background-color: white;
 }
 
+/* HEADER */
+
 header {
           background-color: grey;
           padding: 10px;
+          height: 27vh;
 }
 
 header p {
           max-width: 30%;
 }
 
+/* CONTENT */
+
 main {
           padding: 20px;
-}
-.projects {
+          height: 60vh;
           display: flex;
+                    flex-direction: column;
+                    align-items: center;
+}
+
+.skills {
+          margin: 50px;
+}
+
+.skills-img {
+          justify-content: space-between;
+}
+
+.skills-img img {
+          transition: transform 0.2s ease-in-out;
+}
+
+.skills-img img:hover {
+          transform: scale(1.05);
+}
+
+.projects-cases {
+          display: flex;
+}
+
+.projects-cases div {
+          margin: 10px;
+          transition: transform 0.2s ease-in-out;
+}
+
+.projects-cases div:hover {
+          transform: scale(1.05);
+}
+/* FOOTER*/
+
+footer {
+          background-color: grey;
+          height: 13vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 }
 
 .links {
           display: flex;
+          display: flex;
+                    justify-content: center;
+                    align-items: center;
 }
 
-footer {
-          background-color: grey;
-          display: flex;
+.links a, .links p {
+          padding: 10px;
+          margin-bottom: 20px;
+          margin-top: 20px;
 }
+
