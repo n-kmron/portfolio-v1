@@ -1,7 +1,7 @@
 
 // Do the intro animation
 var typed = new Typed(".multiple-text", {
-          strings: ["Software Developer", "Java Developer", "OO Developer"], typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
+          strings: ["Software Developer", "Mainly Backend Dev", "OO Developer"], typeSpeed: 100, backSpeed: 100, backDelay: 1000, loop: true
 })
 
 // Do the projects scroll
