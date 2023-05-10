@@ -102,8 +102,51 @@ main {
           font-size: x-large;
 }
 
+.projects {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+}
+
 .projects-cases {
           display: flex;
+          justify-content:flex-start;
+          overflow: hidden;
+          transition: transform 0.3s ease-in-out;
+          max-width: 1080px;
+}
+
+.projects-cases.scrollable {
+          overflow: hidden;
+}
+
+.projects-cases.scrollable:focus {
+          outline: none;
+          overflow: auto;
+}
+
+.arrow {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 40px;
+          height: 40px;
+          background-color: gray;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+}
+
+.arrow-left {
+          left: -50px;
+}
+
+.arrow-right {
+          right: -50px;
 }
 
 .projects-cases div {
