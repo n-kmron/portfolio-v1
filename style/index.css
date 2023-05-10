@@ -209,3 +209,55 @@ footer p {
 header a, footer a {
           color: var(--ligh-theme);
 }
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+          .projects {
+                    width: 90%;
+          }
+
+          .projects-cases {
+                    width: 90%;
+          }
+
+          header {
+                    flex-direction: column-reverse;
+          }
+
+          header p {
+                    max-width: 70%;
+                    font-size: xx-large;
+                    letter-spacing: 4px;
+          }
+
+          header h1 {
+                    font-size: 80px;
+          }
+
+          header h2 {
+                    font-size: 35px     ;
+          }
+
+          header h3 {
+                    font-size: 60px;
+          }
+
+          header div img {
+                    height: 300px;
+          }
+
+          .skills div img {
+                    height: 10%;
+                    width: 10%;
+          }
+
+          footer {
+                    height: 15vh;
+          }
+          footer p, footer a {
+                    font-size: xx-large;
+                    align-items: center;
+                    justify-content: center;
+          }
+}
