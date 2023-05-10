@@ -8,7 +8,7 @@ var typed = new Typed(".multiple-text", {
 const projectsCases = document.querySelector('.projects-cases');
 const arrowLeft = document.querySelector('.arrow-left');
 const arrowRight = document.querySelector('.arrow-right');
-const scrollAmount = 350+30;
+const scrollAmount = 350+60;
 
 // Define how divs move with each click on arrows
 arrowLeft.addEventListener('click', function() {
