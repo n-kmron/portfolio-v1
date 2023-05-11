@@ -61,6 +61,11 @@ main {
 
 .skills {
           margin: 50px;
+          text-align: center;
+}
+
+.skills button {
+          margin-top: 20px;
 }
 
 .skills h3 {
@@ -70,7 +75,7 @@ main {
 }
 
 .skills-img {
-          justify-content: space-between;
+          justify-content:center;
 }
 
 .skills-img img {
@@ -282,4 +287,55 @@ header a, footer a {
           .arrow, .arrow-left, .arrow-right {
                     display: none;
           }
+
+          #modal {
+                    height: 450vh;
+          }
+}
+
+
+
+/* HELP*/
+
+#modal {
+          visibility: hidden;
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto auto;
+          background-color: rgba(52, 52, 56, 0.808);
+          height: 230vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.3s;
+}
+
+#modal:target {
+          /* S'active quand la modal est ciblée */
+          visibility: visible;
+          opacity: 1;
+}
+
+/* modal:first-child */
+.modal_content {
+          background-color: var(--ligh-theme);
+          padding: 1.5em 2em;
+          width: 500px;
+          max-width: 90%;
+          border-radius: 4px;
+          position: relative;
+          color: var(--light-color);
+}
+
+#modal a {
+          position: absolute;
+          right: 15px;
+          top: 15px;
+          text-decoration: none;
+          color: red;
+          font-size: larger;
 }
