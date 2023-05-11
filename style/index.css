@@ -121,6 +121,11 @@ main {
           overflow: auto;
 }
 
+.insight {
+          height: 200px;
+          width: 350px;
+}
+
 .arrow {
           position: absolute;
           top: 50%;
@@ -219,6 +224,19 @@ header a, footer a {
 
           .projects-cases {
                     width: 90%;
+                    flex-direction: column;
+                    align-items: center;
+          }
+
+          .projects-cases div {
+                    max-width: 70%;
+                    margin: 20px;
+                    text-align: center;
+          }
+
+          .insight {
+                    width: 100%;
+                    height: 100%;
           }
 
           header {
@@ -259,5 +277,9 @@ header a, footer a {
                     font-size: xx-large;
                     align-items: center;
                     justify-content: center;
+          }
+
+          .arrow, .arrow-left, .arrow-right {
+                    display: none;
           }
 }
