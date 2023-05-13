@@ -46,8 +46,12 @@ header h3 {
           font-size: x-large;
 }
 
+header div {
+          width: 55%;
+}
+
 header div img {
-          height: 300px;
+          width: 100%;
 }
 
 /* CONTENT */
