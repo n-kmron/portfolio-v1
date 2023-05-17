@@ -135,6 +135,26 @@ main {
           overflow: auto;
 }
 
+.image-container {
+          position: relative;
+          display: inline-block;
+}
+.overlay-box {
+          position: absolute;
+          top: -12px;
+          right: 0;
+          width: 340px;
+          height: 200px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+}
+
+.video-player {
+          width: 350px;
+          display: none;
+}
+
 .insight {
           height: 200px;
           width: 350px;

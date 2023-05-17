@@ -24,3 +24,24 @@ arrowRight.addEventListener('click', function() {
     behavior: 'smooth'
   });
 });
+
+
+//Do the launcher video
+const overlayBox = document.querySelector('.overlay-box');
+const videoPlayer = document.querySelector('.video-player');
+const imageContainers = document.querySelectorAll('.image-container');
+
+imageContainers.forEach((container) => {
+  const overlayBox = container.querySelector('.overlay-box');
+  const videoPlayer = container.querySelector('.video-player');
+
+  overlayBox.addEventListener('mouseenter', () => {
+    videoPlayer.style.display = 'block';
+    videoPlayer.play();
+  });
+
+  overlayBox.addEventListener('mouseleave', () => {
+    videoPlayer.style.display = 'none';
+    videoPlayer.pause();
+  });
+});
