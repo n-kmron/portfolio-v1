@@ -1,0 +1,74 @@
+h1 {
+          animation: slideRight 1.5s ease forwards;
+          animation-delay: .2s;
+}
+
+.skills,
+.projects {
+          animation: slideTop 1.5s ease forwards;
+          animation-delay: .2s;
+}
+
+.rightSide {
+          animation: slideLeft 1.5s ease forwards;
+          animation-delay: .2s;
+}
+
+footer p {
+          animation: slideRight 1.5s ease forwards;
+          animation-delay: .2s;
+}
+
+.links {
+          animation: slideLeft 1.5s ease forwards;
+          animation-delay: .2s;
+}
+
+/*KEYFRAMES ANIMATION */
+@keyframes slideRight {
+          0% {
+                    transform: translateX(-100px);
+                    opacity: 0;
+          }
+
+          100% {
+                    transform: translateX(0);
+                    opacity: 1;
+          }
+}
+
+@keyframes slideLeft {
+          0% {
+                    transform: translateX(100px);
+                    opacity: 0;
+          }
+
+          100% {
+                    transform: translateX(0);
+                    opacity: 1;
+          }
+}
+
+@keyframes slideTop {
+          0% {
+                    transform: translateY(100px);
+                    opacity: 0;
+          }
+
+          100% {
+                    transform: translateY(0);
+                    opacity: 1;
+          }
+}
+
+@keyframes slideBottom {
+          0% {
+                    transform: translateY(-100px);
+                    opacity: 0;
+          }
+
+          100% {
+                    transform: translateY(0);
+                    opacity: 1;
+          }
+}
