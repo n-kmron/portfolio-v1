@@ -1,6 +1,14 @@
 /* RESPONSIVE */
 
-@media screen and (max-width: 1200px) {
+/* DESKTOP*/
+@media screen and (min-width: 1024px) {}
+
+/* TABLETS*/
+@media screen and (max-width: 767px) {}
+
+
+/* SMARTPHONES*/
+@media screen and (max-width: 767px) {
           .projects {
                     width: 90%;
           }
