@@ -1,131 +1,152 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Cameron Noupoué</title>
-        <link rel="stylesheet" type="text/css" href="style/index.css">
-        <link rel="stylesheet" type="text/css" href="style/responsive.css">
-        <link rel="stylesheet" type="text/css" href="style/animations.css">
-        <link rel="icon" type="image/x-icon" href="img/favicon.png">
-        <script defer src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-        <script defer src="scripts/index.js"></script>
-    </head>
-    <body>
-          <header>
-            <div class="leftSide">
-                <h3>Hello, It's</h3>
-                <h1>Cameron Noupoué</h1>
-                <h2>I'm a <span class="multiple-text"></span></h2>
-                <p>
-                    I'm actually based in Belgium and I'm studying at HE2B ESI (in my 2nd year) and
-                    in the process of obtaining my <a href="docs/graduation.pdf" alt="website of the school" target="_blank">bachelor's degree</a> in Computer Science. 
-                </p>
-            </div>
-            <div class="rightSide">
-                <img src="img/decoration.png" alt="decoration">
-            </div>    
-          </header>
-          <main>
-                    <section class="skills">
-                        <h3>Main Skills</h3>
-                        <div class="skills-img">
-                            <img src="img/java.svg" alt="java" height="65" width="65" title="Java : my favorite language, where I am the most advanced (many projects : stibride, boulder dash, ...)">
-                            <img src="img/cpp.png" alt="c++" height="65" width="65" title="C++ : i like to work with it (project : baba is you)">
-                            <img src="img/html.svg" alt="html" height="65" width="65" title="HTML : websites">
-                            <img src="img/css.png" alt="css" height="65" width="65" title="CSS">
-                            <img src="img/javascript.svg" alt="javascript" height="65" width="65" title="JS : dynamic website and games (sokoban, ...)">
-                            <img src="img/sql.png" alt="sql" height="65" width="65" title="SQL : most of my databases are based on (PL/SQL, Oracle)">
-                        </div>
-                        <button><a href="#modal">See more...</a></button>
-                    </section>
-                    <section class="projects">
-                        <h3>Projects</h3>
-                        <div class="projects-cases">
-                            <div>
-                                <div class="image-container">
-                                    <img src="img/stibride.png" alt="stibride insight" class="insight">
-                                    <div class="overlay-box">
-                                        <video class="video-player" src="medias/stibride.mp4"></video>
-                                    </div>
-                                </div>
-                                <h2>StibRide</h2>
-                                <p>App from scratch to search a way between 2 metro stations in Brussels and find in real-time the next metro arrival using an API</p>
-                                <a href="https://github.com/n-kmron/stib-ride" alt="github link" target="_blank" class="git-link"><img src="img/github.png" alt="github logo"
-                                        class="githubImg" height="15"> github.com</a>
-                                <article class="info-cards"><span>Java</span><span>JavaFX</span></article>
-                            </div>
-                            <div>
-                                <div class="image-container">
-                                    <img src="img/network.png" alt="network insight" class="insight">
-                                    <div class="overlay-box">
-                                        <video class="video-player" src="medias/network.mp4"></video>
-                                    </div>
-                                </div>
-                                <h2>Social Network Clone</h2>
-                                <p>Simple clone of a social network allowing to login/register and chatrooms system + more features soon</p>
-                                <a href="#" alt="github link" target="_blank" class="git-link"><img src="img/github.png" alt="github logo" class="githubImg" height="15"> no actual repository</a>
-                                <article class="info-cards"><span>Laravel</span><span>HTML</span><span>CSS</span><span>PHP</span></article>
-                            </div>
-                            <div>
-                                <div class="image-container">
-                                    <img src="img/baba.png" alt="baba is you insight" class="insight">
-                                    <div class="overlay-box">
-                                        <video class="video-player" src="medias/babaisyou.mp4"></video>
-                                    </div>
-                                </div>
-                                <h2>Baba Is You</h2>
-                                <p>Board game - implementation of famous Baba Is You from scratch (Only 5 first levels)</p>
-                                <a href="https://github.com/n-kmron/babaisyou" alt="github link" target="_blank" class="git-link"><img src="img/github.png" alt="github logo" class="githubImg" height="15"> github.com</a>
-                                <article class="info-cards"><span>C++</span><span>QWidget</span></article>
-                            </div>
-                            <div>
-                                <div class="image-container">
-                                    <img src="img/sokoban.png" alt="sokoban insight" class="insight">
-                                    <div class="overlay-box">
-                                        <video class="video-player" src="medias/sokoban.mp4"></video>
-                                    </div>
-                                </div>
-                                <h2>Sokoban</h2>
-                                <p>Puzzle-like game playing solo from japan where the player must arrange crates on target squares</p>
-                                <a href="https://github.com/n-kmron/sokoban" alt="github link" target="_blank" class="git-link"><img src="img/github.png" alt="github logo"
-                                        class="githubImg" height="15"> github.com</a>
-                                <article class="info-cards"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>JQuery</span></article>
-                            </div>
-                        </div>
-                        <div class="arrow arrow-left">
-                            <span class="arrow-icon">&lt;</span>
-                        </div>
-                        <div class="arrow arrow-right">
-                            <span class="arrow-icon">&gt;</span>
-                        </div>
-                    </section>
+<html lang="en">
 
-                    <!-- SEE MORE-->
-                    <div id="modal">
-                        <div class="modal_content">
-                            <div class="skills-img">
-                                <img src="img/laravel.png" alt="laravel" height="65" width="65" title="Laravel : Social Network clone">
-                                <img src="img/uml.png" alt="uml" height="65" width="65" title="UML : Design my apps structure (Baba is You, Boulder dash, ...)">
-                                <img src="img/cisco.svg" alt="cisco" height="65" width="65" title="Cisco Packet Tracer : Design simple networks using routers, switches, dhcp, NAT ... (only line commands)">
-                                <img src="img/django.svg" alt="django" height="65" width="65" title="Django : no project, only migrations and design database from UML">
-                                <img src="img/express.png" alt="express" height="65" width="65" title="Express JS : framework used for climate-capsule project">
-                                <img src="img/git.png" alt="git" height="65" width="65" title="Git : gitlab & github">
-                                <img src="img/jquery.png" alt="jquery" height="65" width="65" title="jQuery : used to code Sokoban">
-                                <img src="img/mongo.png" alt="mongo" height="65" width="65" title="MongoDB : db system used for climate-capsule">
-                                <img src="img/springboot.svg" alt="springboot" height="65" width="65" title="Springboot : just tried to use it in my free time">
-                            </div>
-                            <!-- Exit cross -->
-                            <a href="#">&times;</a>
+<head>
+    <meta charset="UTF-8">
+    <title>Cameron Noupoué</title>
+    <link rel="stylesheet" type="text/css" href="style/responsive.css">
+    <link rel="stylesheet" type="text/css" href="style/index.css">
+    <link rel="stylesheet" type="text/css" href="style/animations.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script defer src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script defer src="scripts/index.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="leftSide">
+            <h3>Hello, It's</h3>
+            <h1>Cameron Noupoué</h1>
+            <h2>I'm a <span class="multiple-text"></span></h2>
+            <p>
+                I'm actually based in Belgium and I'm studying at HE2B ESI (in my 2nd year) and
+                in the process of obtaining my <a href="docs/graduation.pdf" alt="website of the school"
+                    target="_blank">bachelor's degree</a> in Computer Science.
+            </p>
+        </div>
+        <div class="rightSide">
+            <img src="img/decoration.png" alt="decoration">
+        </div>
+    </header>
+    <main>
+        <section class="skills">
+            <h3>Main Skills</h3>
+            <div class="skills-img">
+                <img src="img/java.svg" alt="java" height="65" width="65"
+                    title="Java : my favorite language, where I am the most advanced (many projects : stibride, boulder dash, ...)">
+                <img src="img/cpp.png" alt="c++" height="65" width="65"
+                    title="C++ : i like to work with it (project : baba is you)">
+                <img src="img/html.svg" alt="html" height="65" width="65" title="HTML : websites">
+                <img src="img/css.png" alt="css" height="65" width="65" title="CSS">
+                <img src="img/javascript.svg" alt="javascript" height="65" width="65"
+                    title="JS : dynamic website and games (sokoban, ...)">
+                <img src="img/sql.png" alt="sql" height="65" width="65"
+                    title="SQL : most of my databases are based on (PL/SQL, Oracle)">
+            </div>
+            <button><a href="#modal">See more...</a></button>
+        </section>
+        <section class="projects">
+            <h3>Main Projects</h3>
+            <div class="projects-cases">
+                <div>
+                    <div class="image-container">
+                        <img src="img/stibride.png" alt="stibride insight" class="insight">
+                        <div class="overlay-box">
+                            <video class="video-player" src="medias/stibride.mp4"></video>
                         </div>
                     </div>
-          </main>
-          <footer>
-                    <div class="links">
-                              <a href="https://www.linkedin.com/in/cameron-noupoue/" alt="linkedin link" target="_blank">linkedin</a>
-                              <a href="https://github.com/n-kmron" alt="github link" target="_blank">github</a>
-                              <p>cameronnoupoue@gmail.com</p>
+                    <h2>StibRide</h2>
+                    <p>App from scratch to search a way between 2 metro stations in Brussels and find in real-time the
+                        next metro arrival using an API</p>
+                    <a href="https://github.com/n-kmron/stib-ride" alt="github link" target="_blank"
+                        class="git-link"><img src="img/github.png" alt="github logo" class="githubImg" height="15">
+                        github.com</a>
+                    <article class="info-cards"><span>Java</span><span>JavaFX</span></article>
+                </div>
+                <div>
+                    <div class="image-container">
+                        <img src="img/network.png" alt="network insight" class="insight">
+                        <div class="overlay-box">
+                            <video class="video-player" src="medias/network.mp4"></video>
+                        </div>
                     </div>
-                    <p>Designed and Built by <b>Cameron Noupoue</b> &copy;</p>
-          </footer>
-    </body>
+                    <h2>Social Network Clone</h2>
+                    <p>Simple clone of a social network allowing to login/register and chatrooms system + more features
+                        soon</p>
+                    <a href="#" alt="github link" target="_blank" class="git-link"><img src="img/github.png"
+                            alt="github logo" class="githubImg" height="15"> no actual repository</a>
+                    <article class="info-cards"><span>Laravel</span><span>HTML</span><span>CSS</span><span>PHP</span>
+                    </article>
+                </div>
+                <div>
+                    <div class="image-container">
+                        <img src="img/baba.png" alt="baba is you insight" class="insight">
+                        <div class="overlay-box">
+                            <video class="video-player" src="medias/babaisyou.mp4"></video>
+                        </div>
+                    </div>
+                    <h2>Baba Is You</h2>
+                    <p>Board game - implementation of famous Baba Is You from scratch (Only 5 first levels)</p>
+                    <a href="https://github.com/n-kmron/babaisyou" alt="github link" target="_blank"
+                        class="git-link"><img src="img/github.png" alt="github logo" class="githubImg" height="15">
+                        github.com</a>
+                    <article class="info-cards"><span>C++</span><span>QWidget</span></article>
+                </div>
+                <div>
+                    <div class="image-container">
+                        <img src="img/sokoban.png" alt="sokoban insight" class="insight">
+                        <div class="overlay-box">
+                            <video class="video-player" src="medias/sokoban.mp4"></video>
+                        </div>
+                    </div>
+                    <h2>Sokoban</h2>
+                    <p>Puzzle-like game playing solo from japan where the player must arrange crates on target squares
+                    </p>
+                    <a href="https://github.com/n-kmron/sokoban" alt="github link" target="_blank" class="git-link"><img
+                            src="img/github.png" alt="github logo" class="githubImg" height="15"> github.com</a>
+                    <article class="info-cards">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>JQuery</span>
+                    </article>
+                </div>
+            </div>
+            <div class="arrow arrow-left">
+                <span class="arrow-icon">&lt;</span>
+            </div>
+            <div class="arrow arrow-right">
+                <span class="arrow-icon">&gt;</span>
+            </div>
+        </section>
+
+        <!-- SEE MORE-->
+        <div id="modal">
+            <div class="modal_content">
+                <div class="skills-img">
+                    <img src="img/laravel.png" alt="laravel" height="65" width="65"
+                        title="Laravel : Social Network clone">
+                    <img src="img/uml.png" alt="uml" height="65" width="65"
+                        title="UML : Design my apps structure (Baba is You, Boulder dash, ...)">
+                    <img src="img/express.png" alt="express" height="65" width="65"
+                        title="Express JS : framework used for climate-capsule project">
+                    <img src="img/git.png" alt="git" height="65" width="65" title="Git : gitlab & github">
+                    <img src="img/jquery.png" alt="jquery" height="65" width="65" title="jQuery : used to code Sokoban">
+                    <img src="img/mongo.png" alt="mongo" height="65" width="65"
+                        title="MongoDB : db system used for climate-capsule">
+                    <img src="img/springboot.svg" alt="springboot" height="65" width="65"
+                        title="Springboot : just tried to use it in my free time">
+                </div>
+                <!-- Exit cross -->
+                <a href="#">&times;</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/cameron-noupoue/" alt="linkedin link" target="_blank">linkedin</a>
+            <a href="https://github.com/n-kmron" alt="github link" target="_blank">github</a>
+            <p>cameronnoupoue@gmail.com</p>
+        </div>
+        <p>Designed and Built by <b>Cameron Noupoue</b> &copy;</p>
+    </footer>
+</body>
+
 </html>
