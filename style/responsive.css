@@ -17,8 +17,12 @@
                     align-items: center;
           }
 
+          .projects h5 {
+                    display: none;
+          }
+
           .projects-cases div {
-                    max-width: 70%;
+                    max-width: 100%;
                     margin: 20px;
                     text-align: center;
           }
@@ -33,8 +37,8 @@
           }
 
           header p {
-                    max-width: 70%;
-                    font-size: xx-large;
+                    max-width: 95%;
+                    font-size: large;
                     letter-spacing: 4px;
           }
 
@@ -50,8 +54,10 @@
                     font-size: 60px;
           }
 
-          header div img {
-                    height: 300px;
+          header .rightSide,
+          header .leftSide {
+                    padding: 50px;
+                    width: 100%;
           }
 
           .skills div img {
@@ -61,6 +67,11 @@
 
           footer {
                     height: 15vh;
+                    text-align: center;
+          }
+
+          footer .links {
+                    max-width: 50%;
           }
 
           footer p,
