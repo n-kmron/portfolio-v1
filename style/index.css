@@ -271,6 +271,7 @@ footer a {
           justify-content: center;
           align-items: center;
           transition: 0.3s;
+          text-align: center;
 }
 
 #modal:target {
@@ -297,4 +298,10 @@ footer a {
           text-decoration: none;
           color: red;
           font-size: larger;
+}
+
+#modal h3 {
+          padding: 15px;
+          width: 100%;
+          text-decoration: underline;
 }
