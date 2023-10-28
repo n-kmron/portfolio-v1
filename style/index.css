@@ -54,6 +54,26 @@ header div img {
           width: 100%;
 }
 
+.btn-cv {
+          color: white;
+          cursor: pointer;
+          border: none;
+          padding: 15px;
+          width: 25%;
+          background-color: blue;
+          border-radius: 10px;
+          font-size: large;
+          transition: all 0.3s ease;
+}
+
+.btn-cv:hover {
+          opacity: 0.8;
+}
+
+.btn-cv a {
+          text-decoration: none;
+}
+
 /* CONTENT */
 
 main {
