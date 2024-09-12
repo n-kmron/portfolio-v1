@@ -115,12 +115,14 @@ main {
           transform: scale(1.05);
 }
 
-.projects {
+.projects,
+.experience {
           position: relative;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          margin: 50px;
 }
 
 .projects h3 {
@@ -225,6 +227,60 @@ main {
           margin-top: 5px;
           margin-bottom: 5px;
           text-decoration: none;
+}
+
+/* TIMELINE */
+.timeline-area {
+          margin: 20px auto;
+          width: 700px;
+          border-left: 2px solid #ccc;
+          padding: 0 20px 0 30px;
+}
+
+.timeline-area div {
+          background-color: #fff;
+          padding: 10px 25px;
+          font-size: 16px;
+          border: 1px solid #ccc;
+          line-height: 1.7;
+          position: relative;
+          height: 110px;
+          margin-bottom: 20px;
+}
+
+.timeline-area div:before {
+          content: ' ';
+          display: block;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #000;
+          border: 3px solid #ddd;
+          position: absolute;
+          top: 10px;
+          left: -40px;
+}
+
+.timeline-area div:after {
+          content: ' ';
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-color: transparent #ddd transparent transparent;
+          border-width: 8px;
+          position: absolute;
+          left: -17px;
+          top: 10px;
+}
+
+.timeline-area div h2 {
+          text-transform: uppercase;
+}
+
+.timeline-area div h3,
+.timeline-area div h4,
+.timeline-area div h5 {
+          margin: 0;
 }
 
 /* FOOTER*/
